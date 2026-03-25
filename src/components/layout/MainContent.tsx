@@ -173,6 +173,7 @@ const styles = {
     flexDirection: 'column',
     gap: 2,
     height: '100%',
+    overflow: 'hidden',
   },
   filterBar: (theme: Theme) => ({
     display: 'flex',
@@ -216,5 +217,7 @@ const styles = {
   },
   tableContainer: {
     flexGrow: 1,
+    minHeight: 0,
+    height: '100%',
   },
 };

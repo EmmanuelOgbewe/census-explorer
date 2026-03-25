@@ -110,25 +110,25 @@ const HowToModal = ({ open, onClose }: HowToModalProps) => {
   };
 
   const HOW_TO_STEPS: HowToStep[] = [
-    {
-      icon: <FilterListIcon sx={styles.stepIcon} />,
-      title: 'Select Your Filters',
-      description:
-        'Use the filters at the top of the page to select a state, year, and metric you want to explore. All three filters are required before searching.',
-    },
-    {
-      icon: <SearchIcon sx={styles.stepIcon} />,
-      title: 'Run Your Search',
-      description:
-        'Click the Search button to fetch data from the U.S. Census Bureau API based on your selected filters.',
-    },
-    {
-      icon: <TableChartIcon sx={styles.stepIcon} />,
-      title: 'Explore the Results',
-      description:
-        'Results are displayed in an interactive table below. You can sort by any column, filter within columns, and paginate through results.',
-    },
-  ];
+  {
+    icon: <FilterListIcon sx={styles.stepIcon} />,
+    title: 'Select Your Filters',
+    description:
+      'Select one or more years to compare data across time. Optionally select a state to highlight it in the results. All searches require at least one year and a metric.',
+  },
+  {
+    icon: <SearchIcon sx={styles.stepIcon} />,
+    title: 'Run Your Search',
+    description:
+      'Click the Search button to fetch live data from the U.S. Census Bureau API based on your selected filters.',
+  },
+  {
+    icon: <TableChartIcon sx={styles.stepIcon} />,
+    title: 'Explore the Results',
+    description:
+      'Results are displayed in an interactive table. When multiple years are selected columns are added for each year enabling side by side comparison. Sort and filter any column, and paginate through results.',
+  },
+];
 
   return (
     <Dialog

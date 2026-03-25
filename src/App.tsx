@@ -35,5 +35,9 @@ const styles = {
     p: 3,
     backgroundColor: theme.palette.background.default,
     minWidth: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
+    overflow: 'hidden',
   }),
 };

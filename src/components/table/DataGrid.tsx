@@ -64,7 +64,6 @@ const CensusDataGrid = ({
         }}
         getRowClassName={getRowClassName}
         disableRowSelectionOnClick
-        autoHeight
         sx={styles.grid(theme)}
       />
     </Box>
@@ -78,6 +77,7 @@ export default CensusDataGrid;
 const styles = {
   root: (theme: Theme) => ({
     width: '100%',
+    height: '100%',
     backgroundColor: theme.palette.background.paper,
     borderRadius: 2,
     border: `1px solid ${theme.palette.divider}`,

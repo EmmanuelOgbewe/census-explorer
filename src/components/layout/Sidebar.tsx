@@ -47,11 +47,6 @@ const Sidebar = ({ onNavigate }: SidebarProps) => {
       onClick: () => onNavigate?.('/'),
     },
     {
-      label: 'Explorer',
-      icon: <BarChartIcon />,
-      onClick: () => onNavigate?.('/explorer'),
-    },
-    {
       label: 'How To Use',
       icon: <HelpOutlineIcon />,
       onClick: handleModalOpen,
